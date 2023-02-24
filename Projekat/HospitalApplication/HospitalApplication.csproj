@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4044CA7B-0B9B-4A99-9923-BAAC6C483625}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HospitalApplication</RootNamespace>
+    <AssemblyName>HospitalApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="UI\DoctorUI\DoctorMainWindow.xaml.cs">
+      <DependentUpon>DoctorMainWindow.xaml</DependentUpon>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Include="UI\HospitalManagerUI\HospitalManagerMainWindow.xaml.cs">
+      <DependentUpon>HospitalManagerMainWindow.xaml</DependentUpon>
+=======
+    <Compile Include="UI\HospitalManagerUI\HMBrisanjeLekaPotvrda.xaml.cs">
+      <DependentUpon>HMBrisanjeLekaPotvrda.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMBrisnajeLekaInfo.xaml.cs">
+      <DependentUpon>HMBrisnajeLekaInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMEvidencijaIBrisanjeLeka.xaml.cs">
+      <DependentUpon>HMEvidencijaIBrisanjeLeka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMIzmenaKolicineLeka.xaml.cs">
+      <DependentUpon>HMIzmenaKolicineLeka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMIzmenaKolicineLeka2.xaml.cs">
+      <DependentUpon>HMIzmenaKolicineLeka2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMIzmenaKolicineLekaInfo.xaml.cs">
+      <DependentUpon>HMIzmenaKolicineLekaInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMIzmenaSastavaLeka.xaml.cs">
+      <DependentUpon>HMIzmenaSastavaLeka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMIzmenaSastavaLeka2-1.xaml.cs">
+      <DependentUpon>HMIzmenaSastavaLeka2-1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMIzmenaSastavaLeka2.xaml.cs">
+      <DependentUpon>HMIzmenaSastavaLeka2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMLekovi.xaml.cs">
+      <DependentUpon>HMLekovi.xaml</DependentUpon>
+>>>>>>> 1f43c79b3868c23c49df3302103c3f68a21dbcd0
+    </Compile>
+    <Compile Include="UI\PatientUI\PatientMainWindow.xaml.cs">
+      <DependentUpon>PatientMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SecretaryUI\Calendar.xaml.cs">
+      <DependentUpon>Calendar.xaml</DependentUpon>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Include="UI\SecretaryUI\Help1.xaml.cs">
+      <DependentUpon>Help1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SecretaryUI\HomeSecretary.xaml.cs">
+      <DependentUpon>HomeSecretary.xaml</DependentUpon>
+=======
+    <Compile Include="UI\HospitalManagerUI\HMOdabirLekaraZaPotvrduLeka.xaml.cs">
+      <DependentUpon>HMOdabirLekaraZaPotvrduLeka.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMProsledjjivanjeLekaruInfo.xaml.cs">
+      <DependentUpon>HMProsledjjivanjeLekaruInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMRadnoVremeZaposlenih.xaml.cs">
+      <DependentUpon>HMRadnoVremeZaposlenih.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMRadnoVremeZaposlenih2.xaml.cs">
+      <DependentUpon>HMRadnoVremeZaposlenih2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMUnosZaposlenog.xaml.cs">
+      <DependentUpon>HMUnosZaposlenog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMUnosZaposlenog2.xaml.cs">
+      <DependentUpon>HMUnosZaposlenog2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\HospitalManagerUI\HMZaposleni.xaml.cs">
+      <DependentUpon>HMZaposleni.xaml</DependentUpon>
+>>>>>>> 1f43c79b3868c23c49df3302103c3f68a21dbcd0
+    </Compile>
+    <Compile Include="UI\SecretaryUI\MyProfile.xaml.cs">
+      <DependentUpon>MyProfile.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SecretaryUI\NewUserRegistration.xaml.cs">
+      <DependentUpon>NewUserRegistration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SecretaryUI\Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SecretaryUI\SecretaryMainWindow.xaml.cs">
+      <DependentUpon>SecretaryMainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SelectionMenu.xaml.cs">
+      <DependentUpon>SelectionMenu.xaml</DependentUpon>
+    </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="UI\DoctorUI\DoctorMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+<<<<<<< HEAD
+    <Page Include="UI\HospitalManagerUI\HospitalManagerMainWindow.xaml">
+=======
+    <Page Include="UI\HospitalManagerUI\HMBrisanjeLekaPotvrda.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMBrisnajeLekaInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMEvidencijaIBrisanjeLeka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMIzmenaKolicineLeka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMIzmenaKolicineLeka2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMIzmenaKolicineLekaInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMIzmenaSastavaLeka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMIzmenaSastavaLeka2-1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMIzmenaSastavaLeka2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMLekovi.xaml">
+>>>>>>> 1f43c79b3868c23c49df3302103c3f68a21dbcd0
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\PatientUI\PatientMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SecretaryUI\Calendar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+<<<<<<< HEAD
+    <Page Include="UI\SecretaryUI\Help1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SecretaryUI\HomeSecretary.xaml">
+=======
+    <Page Include="UI\HospitalManagerUI\HMOdabirLekaraZaPotvrduLeka.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMProsledjjivanjeLekaruInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMRadnoVremeZaposlenih.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMRadnoVremeZaposlenih2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMUnosZaposlenog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMUnosZaposlenog2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\HospitalManagerUI\HMZaposleni.xaml">
+>>>>>>> 1f43c79b3868c23c49df3302103c3f68a21dbcd0
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SecretaryUI\MyProfile.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SecretaryUI\NewUserRegistration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SecretaryUI\Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SecretaryUI\SecretaryMainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UI\SelectionMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\SecretaryUI\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\SecretaryUI\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\SecretaryUI\b-44-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\SecretaryUI\Untitled.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\SecretaryUI\dsdsd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\SecretaryUI\temporary.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="UI\SecretaryUI\profile.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

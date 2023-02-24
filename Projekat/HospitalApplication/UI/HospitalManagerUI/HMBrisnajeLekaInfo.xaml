@@ -1,0 +1,24 @@
+﻿<Window x:Class="HospitalApplication.UI.HospitalManagerUI.HMBrisnajeLekaInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HospitalApplication.UI.HospitalManagerUI"
+        mc:Ignorable="d"
+        Title="HMBrisnajeLekaInfo" Height="350" Width="350">
+    <Grid>
+        <StackPanel>
+            <StackPanel Margin="20 0">
+                <Label Content="Uspesno se izbrisali lek:" FontSize="20" Margin="0 20 0 0" />
+                <Label Content="XY" FontSize="22" FontWeight="Bold"  />
+                
+                <StackPanel  Margin="0 120 0 0">
+
+                    <Button Content="Nazad" Height="55"  FontSize="20"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
